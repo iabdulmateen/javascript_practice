@@ -32,6 +32,9 @@ else if (withdraw <= balance){
     var total = balance - withdraw;
     console.log("Your Remaining Balance is " + total);
 }
+else{
+    console.log("Invalid Input");
+}
 var balance = 10000;
  var deposite = +prompt("enter the amount you want to deposite");
  if (deposite > balance){
@@ -41,4 +44,6 @@ else if (deposite <= balance){
     var total = balance + deposite;
     console.log("Your Total Balance is " + total);
 }
-
+else{
+    console.log("Invalid Input");
+}
