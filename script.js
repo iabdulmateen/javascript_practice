@@ -159,19 +159,41 @@
 // alert(c);
 // chapter 7 parectice
 // task 1
-var a = 2;
-var b = 3;
-var check = (a++ + ++b) - (b-- + ++a);
-alert(check);
-var res = (5 + 5) * (2 + 2);
-var res = 10 + (20 / 2) * 2;
-var x = 5; var res = (x++ + 2) * 2;
-var x = 10; var res = (++x + x++) + 5; 
-var x = 3; var res = (x++ + ++x) - (x + 1);
-var x = 2; var y = 3; var res = (x++ + ++y) * (y--);
-var x = 5; var y = 2; var res = (++x - --y) + (x++ + y--);
-var x = 1; var y = 1; var res = (++x + ++y) - (x-- + y--);
-var a = 10; var b = 5; var res = (a++ - --b) + (++a + b++);
-var m = 2; var n = 4; var res = ((m++ + ++m) * (n-- - --n));
-
-
+// var a = 2;
+// var b = 3;
+// var check = (a++ + ++b) - (b-- + ++a);
+// alert(check);
+// var res = (5 + 5) * (2 + 2);
+// var res = 10 + (20 / 2) * 2;
+// var x = 5; var res = (x++ + 2) * 2;
+// var x = 10; var res = (++x + x++) + 5; 
+// var x = 3; var res = (x++ + ++x) - (x + 1);
+// var x = 2; var y = 3; var res = (x++ + ++y) * (y--);
+// var x = 5; var y = 2; var res = (++x - --y) + (x++ + y--);
+// var x = 1; var y = 1; var res = (++x + ++y) - (x-- + y--);
+// var a = 10; var b = 5; var res = (a++ - --b) + (++a + b++);
+// var m = 2; var n = 4; var res = ((m++ + ++m) * (n-- - --n));
+// chapter 8 parectice
+// task 1
+// var a = "Hello";
+// var b = "World";
+// var result = a + b;
+// alert(result);
+// var num1 = "10";
+// var num2 = 20;
+// var total = num1 + num2;
+// alert(total);
+// var x = "The result is: " + (2 + 2);
+// alert(x);
+// var name = "Mateen";
+// var score = 10;
+// var message = "Hello " + name + ", your total score is: " + (++score + 5);
+// alert(message);
+// chapter 9 parectice
+// task 1
+// var question = "what is your name?";
+// var defaultAnswr = "Abdul Mateen"
+// var userName = prompt(question, defaultAnswr);
+var city =prompt("where do you live?");
+var message = "welcome to " + city + "!";
+alert (message);
