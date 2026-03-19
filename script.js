@@ -350,12 +350,39 @@
 
 // }
 // document.write(total)
-for(var i = 1; i <=3;i++){
-   var password=prompt("Type Your Password!")
-    if(password === "smit123"){
-     alert("login confirmed!")
-     break;
-    }
+// for(var i = 1; i <=3;i++){
+//    var password=prompt("Type Your Password!")
+//     if(password === "smit123"){
+//      alert("login confirmed!")
+//      break;
+//     }
 
-}
-alert("wrong password")
+// }
+// alert("wrong password")
+
+// for(var i = 1; i <=10;i++){
+//     if (i % 2 === 0) {
+//         alert(i +" is Even Number")
+//      }
+// else {
+//     alert(i +" is Odd Number!")
+// }
+// }
+// for(var i = 1; i <=15; i++){
+//     if(i % 3 === 0){
+//         alert("Fizz")
+//     }
+//     else if(i % 5 === 0){
+//         alert("Buzz")
+//     }
+//     else{
+//         alert(i +" is simple number")
+//     }
+// }
+// var evenSum = 0;
+// for(var i =0;i <= 10;i++){
+//     if(i % 2 === 0){
+//         evenSum=evenSum+i
+//     }
+// }
+// document.write(evenSum)
