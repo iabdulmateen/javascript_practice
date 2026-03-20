@@ -142,3 +142,13 @@
 // }else{
 //     document.write("nhi mila!")
 // }
+var startNum= +prompt("type starting number!");
+var endNum= +prompt("type ending number!");
+var count = 0;
+for(var i = startNum; i <=endNum;i++){
+    if(i % 5 === 0){
+        document.write(i + " divided by 5 <br>");
+        count++
+    }
+}
+document.write(count )
