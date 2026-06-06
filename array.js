@@ -23,7 +23,7 @@
 // var colors = ["Red", "Green", "Blue", "Yellow"];
 // colors.splice(1,1,"Orange","Pink")
 // document.write(colors)
-var fruits = ["Apple", "Mango", "Banana", "Orange"];
-var newFruits= fruits.slice(1,3);
-document.write(fruits + "<br>");
-document.write(newFruits);
+// var fruits = ["Apple", "Mango", "Banana", "Orange"];
+// var newFruits= fruits.slice(1,3);
+// document.write(fruits + "<br>");
+// document.write(newFruits);
