@@ -106,7 +106,73 @@
 // var learning = "I love Python and Python is easy.";
 // var fixVar = learning.replace(/Python/g, "Javascript");
 // alert(fixVar);
-var myScoreRnd = Math.round(4.3);
-var myScoreCeil = Math.ceil(4.3);
-var myScoreFloor = Math.floor(4.3);
-alert(myScoreFloor);
+// var myScoreRnd = Math.round(4.3);
+// var myScoreCeil = Math.ceil(4.3);
+// var myScoreFloor = Math.floor(4.3);
+// alert(myScoreFloor);
+// var randomNum = Math.floor(Math.random() * 10) + 1;
+// alert(randomNum);
+// var accountNo = 12345;
+// alert(accountNo);
+// var accountString = accountNo.toString();
+// alert(accountString.length);
+// var price1 = "55.5";
+// var price2 = "44.5";
+// strToNum1 = parseFloat(price1);
+// strToNum2 = parseFloat(price2);
+// totalAmount = strToNum1 + strToNum2;
+// finalString = totalAmount.toString();
+
+// alert(finalString);
+// var myPercentage = 85.67892;
+// var newPercentage = myPercentage.toFixed(2);
+// alert(newPercentage);
+// var rightNow = new Date();
+// alert(rightNow);
+// var d = new Date();
+// var year = d.getFullYear();
+// var month = d.getMonth() + 1;
+// var currentDate = d.getDate();
+// alert(month + "/" + currentDate + "/ " + year);
+// var yearFirstDay = new Date("July 19 2026");
+// var dayOfDate = yearFirstDay.getDay();
+// alert(dayOfDate);
+// var d = new Date();
+// d.setFullYear(2030);
+// d.setDate(15);
+// alert(d);
+// function tellTime() {
+//   var d = new Date();
+//   alert(d);
+// }
+// tellTime();
+// function greetUser(userName) {
+//   alert("Hello!" + " " + userName);
+// }
+// greetUser("Abdul Mateen");
+// greetUser("Muhammad Aleem");
+// greetUser("Muaavia");
+// function squareNumber(num) {
+//   var sNum = num * num;
+//   return sNum;
+// }
+// var result = squareNumber(5);
+// alert(result);
+// function myCar() {
+//   var carName = "Civic";
+//   return carName;
+// }
+// var meri = myCar();
+// alert(meri);
+// alert(meri);
+var position = prompt("type your Position");
+switch (position.toLowerCase()) {
+  case "ui/ux designer":
+    alert("Designing is creative!");
+    break;
+  case "web develpore":
+    alert("Coading Is Fun");
+    break;
+  default:
+    alert("Keep Learning");
+}
