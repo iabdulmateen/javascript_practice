@@ -165,14 +165,43 @@
 // var meri = myCar();
 // alert(meri);
 // alert(meri);
-var position = prompt("type your Position");
-switch (position.toLowerCase()) {
-  case "ui/ux designer":
-    alert("Designing is creative!");
-    break;
-  case "web develpore":
-    alert("Coading Is Fun");
-    break;
-  default:
-    alert("Keep Learning");
+// var position = prompt("type your Position");
+// switch (position.toLowerCase()) {
+//   case "ui/ux designer":
+//     alert("Designing is creative!");
+//     break;
+//   case "web develpore":
+//     alert("Coading Is Fun");
+//     break;
+//   default:
+//     alert("Keep Learning");
+// }
+// var count = 1;
+// while (count <= 5) {
+//   alert(count);
+//   count++;
+// }
+// var x = 20;
+// do {
+//   alert(x);
+//   x++;
+// } while (x < 5);
+function showWarning() {
+  alert("This link is restricted!");
+}
+function addToCart() {
+  alert("Item successfully added!");
+}
+function showEffect() {
+  alert("Mouse is over the heading");
+}
+function showTip() {
+  console.log("Caps Lock ka khayal rakhein!");
+}
+function showCity() {
+  var uCity = document.getElementById("userCity").value;
+  alert(uCity);
+}
+function zipCode() {
+  var zipcode = (document.getElementById("zipCode").value = 75500);
 }
