@@ -627,28 +627,78 @@
 // }
 // const user_1 = new Wallet(500)
 // user_1.buyItem(600)
-class StreamingAccount{
-    constructor(user,Package){
-        this.userName = user;
-        this.PackageType = Package;
-    }
-    playPremiumMovie(){
-        if(this.PackageType === "premium"){
-            console.log(`🍿 Movie chal rahi hai... Enjoy karein, ${this.userName}!`);
+// class StreamingAccount{
+//     constructor(user,Package){
+//         this.userName = user;
+//         this.PackageType = Package;
+//     }
+//     playPremiumMovie(){
+//         if(this.PackageType === "premium"){
+//             console.log(`🍿 Movie chal rahi hai... Enjoy karein, ${this.userName}!`);
 
-        }else{
-            console.log(`❌ ${this.userName}, yeh movie sirf Premium users ke liye hai. Package upgrade`);
-        }
+//         }else{
+//             console.log(`❌ ${this.userName}, yeh movie sirf Premium users ke liye hai. Package upgrade`);
+//         }
+//     }
+//     upgradePackage(){
+//         this.PackageType = "premium"
+//         console.log(`🎉 Mubarak ho ${this.userName}! Aapka account Premium par upgrade ho gay`);
+//     }
+// }
+// const user_1 = new StreamingAccount("Mateen","Free")
+// const user_2 = new StreamingAccount("Aneeq","premium")
+// user_1.playPremiumMovie();
+// user_1.upgradePackage();
+// user_1.playPremiumMovie();
+// user_2.upgradePackage();
+// user_2.playPremiumMovie();
+// class Cars{
+//     constructor(name,model,year,status){
+//         this.userName=name;
+//         this.modelName=model;
+//         this.Year=year;
+//         this.status=status;
+//     }
+//     bookCar(){
+//     if(this.status === "Avaliable"){
+//         console.log(`yes carname: ${this.userName} model: ${this.modelName} Year: ${this.Year} is ${this.status}`);
+//         this.status ="Booked"
+//     }else{
+//         console.log(`sorry carname: ${this.userName} model: ${this.modelName} Year: ${this.Year} is ${this.status}`);
+//     }
+//     }
+//     returnCar(){
+//         this.status= "Avaliable";
+//     }
+// }
+// const car_1 = new Cars("Corola","Grande",2026,"Avaliable");
+// const car_2 = new Cars("Corola","Xli",2026,"Avaliable");
+// const car_3 = new Cars("Corola","Altis",2026,"Avaliable");
+// const car_4 = new Cars("Corola","Gli",2026,"Avaliable");
+// car_1.bookCar();
+// car_1.bookCar();
+// car_1.returnCar();
+// car_1.bookCar();
+// car_3.bookCar();
+class Person{
+    constructor(name,age){
+        this.userName =name;
+        this.userAge = age
     }
-    upgradePackage(){
-        this.PackageType = "premium"
-        console.log(`🎉 Mubarak ho ${this.userName}! Aapka account Premium par upgrade ho gay`);
+    introduce(){
+        console.log(`My Name is ${this.userName} And I,m ${this.userAge} Years Old.`);
     }
 }
-const user_1 = new StreamingAccount("Mateen","Free")
-const user_2 = new StreamingAccount("Aneeq","premium")
-user_1.playPremiumMovie();
-user_1.upgradePackage();
-user_1.playPremiumMovie();
-user_2.upgradePackage();
-user_2.playPremiumMovie();
+class Student extends Person{
+    constructor(name,age,rollNo){
+    super(name,age);
+    this.rollNumber = rollNo;
+}
+showCompleteDetails(){
+    this.introduce();
+    console.log(`And My Roll Number Is ${this.rollNumber}`);
+}
+
+}
+const stu_1 = new Student("Mateen",20 , 777)
+stu_1.showCompleteDetails();
