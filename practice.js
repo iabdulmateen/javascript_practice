@@ -439,15 +439,216 @@
 //     console.log(`FAIL ${student.name} | ${student.grade}`);
 //   }
 // });
-function Employee(name, salary) {
-  this.name = name;
-  this.salary =salary;
-}
-Employee.prototype.showSalary = function () {
-  console.log(`${this.name} ki salary ${this.salary} PKR he!`);
-};
-const employee_1 = new Employee("Abdul Mateen", "80000000000");
-const employee_2 = new Employee("Aneeq", "90000000");
+// function Employee(name, salary) {
+//   this.name = name;
+//   this.salary = salary;
+// }
+// Employee.prototype.showSalary = function () {
+//   console.log(`${this.name} ki salary ${this.salary} PKR he!`);
+// };
+// const employee_1 = new Employee("Abdul Mateen", 80000000000);
+// const employee_2 = new Employee("Aneeq", 90000000);
+// const employee_3 = new Employee("Ani", 90000000);
+// const employee_4 = new Employee("Ali", 9000000);
+// const employee_5 = new Employee("jan", 5000000);
+// const employee_6 = new Employee("Anees", 900000);
+// const employee_7 = new Employee("Anus", 90000);
+// const employee_8 = new Employee("saley", 900000);
+// const employee_9 = new Employee("jack", 900000);
+// const employee_10 = new Employee("hamza", 90000);
+// const employee_11 = new Employee("hanzala", 900000);
+// const employee_12 = new Employee("hasan", 90000);
 
-employee_1.showSalary();
-employee_2.showSalary();
+// const allEmployee = [
+//   employee_1,
+//   employee_2,
+//   employee_3,
+//   employee_4,
+//   employee_5,
+//   employee_6,
+//   employee_7,
+//   employee_8,
+//   employee_9,
+//   employee_10,
+//   employee_11,
+//   employee_12,
+// ];
+// allEmployee.forEach((emp) => {
+//   if (emp.salary >= 80000000) {
+//     emp.showSalary();
+//   } else {
+//     console.log(`${emp.name} is on probation. `);
+//   }
+// });
+// const names = ["abdul mateen", "muhammad aneeq", "hamza khan"];
+// const unames = names.map((name) =>{
+//   return name.toUpperCase();
+// })
+// console.log(unames)
+// const prices = [10, 20, 30];
+// const formattedPrices = prices.map((price) =>{
+//   return  `RS. ${price}`
+// })
+// console.log(formattedPrices);
+
+// const users = [
+//   { name: "Mateen", age: 20, city: "Karachi" },
+//   { name: "Aneeq", age: 19, city: "Karachi" },
+//   { name: "Hamza", age: 22, city: "Lahore" }
+// ];
+// const uname = users.map((user) => {
+//  return user.name
+// })
+// console.log(uname)
+
+// const users = [
+//   { name: "Mateen", age: 20, city: "Karachi" },
+//   { name: "Aneeq", age: 19, city: "Karachi" },
+//   { name: "Hamza", age: 22, city: "Lahore" }
+// ];
+// const userDetails = users.map((user) =>{
+//   return `${user.name} Lives In ${user.city} `
+// })
+// console.log(userDetails)
+// const users = [
+//   { name: "Mateen", age: 20, city: "Karachi" },
+//   { name: "Aneeq", age: 19, city: "Karachi" }
+// ];
+// const userHTML = users.map((user) =>{
+//   return `<h1>${user.name}</h1>`
+// })
+// console.log(userHTML);
+// const studentRolls =new Map();
+// studentRolls.set(101,"Mateen");
+// studentRolls.set(102,"Aneeq");
+// studentRolls.set(103,"Hamza");
+// console.log(studentRolls.get(101));
+// const studentRolls = new Map();
+// studentRolls.set(101, "Mateen");
+// studentRolls.set(102, "Aneeq");
+// studentRolls.set(103, "Hamza");
+// console.log(studentRolls.has(102))
+// studentRolls.delete(103)
+// console.log(studentRolls.has(103))
+// const studentRolls = new Map();
+// studentRolls.set(101, "Mateen");
+// studentRolls.set(102, "Aneeq");
+// studentRolls.set(103, "Hamza");
+// studentRolls.forEach((value,key) =>{
+//   if(key === 101){
+//       console.log(`Founder: ${value} `);
+      
+//   }else{
+//     console.log(`Student: ${value}`);
+    
+//   }
+// })
+// const student = { name: "Mateen", city: "Karachi" };
+
+// Object.seal(student);
+
+// student.role = "Developer"; 
+
+// student.city = "London";
+
+// console.log("--- TEST 1 (Object.seal) ---");
+// console.log(student); 
+// const rawMap = new Map();
+
+// rawMap.set("1", "Main String Hoon");
+// rawMap.set(1, "Main Number Hoon");
+
+// console.log("\n--- TEST 2 (Map Unique Keys) ---");
+// console.log("Total items in Map:", rawMap.size); 
+
+// console.log("String key ka maal:", rawMap.get("1"));
+// console.log("Number key ka maal:", rawMap.get(1));
+// class Car{
+//     constructor(brand,model,year){
+//     this.brandName=brand;
+//     this.modelName=model;
+//     this.Year=year;
+//     }
+//     drive(){
+//         console.log(`Apki ${this.brandName} ${this.modelName} ${this.Year} chl rhi he`);
+//     }
+// }
+// const car_1 = new Car("Mercedes","C-Class", 2026)
+// car_1.drive();
+// class user{
+//     constructor(username,email,status){
+//         this.userName = username;
+//         this.email= email;
+//         this.status=status;
+//         }
+//         getProfile(){
+//             console.log(`User: ${this.userName} | Email: ${this.email} `);
+//         }
+//         chekStatus(){
+//             if(this.status === "Active"){
+//               console.log(`${this.userName} Online he `);
+//             }else{
+//                 console.log(`${this.userName} Offline he`);
+//             }
+//         }
+
+// }
+// const user_1 = new  user("Mateen","Innovatecode121@gmail.com","Active");
+// const user_2 = new  user("Hamza","Editor121@gmail.com","InActive");
+// user_1.getProfile();
+// user_1.chekStatus();
+// user_2.getProfile();
+// user_2.chekStatus();
+// class Hero{
+//     constructor(name,health){
+//         this.userName = name ;
+//         this.userHealth= health;
+
+//     }
+//     takeDamage(amount){
+//         this.userHealth = this.userHealth - amount
+//         console.log(`${this.userName} ko goli lagi! Nayi health: ${this.userHealth} hai.`);
+//     }
+// }
+// const player_1= new Hero("mateen", 100)
+// player_1.takeDamage(30)
+// class Wallet{
+//     constructor(balance){
+//       this.userBalance = balance;
+//     }
+//     buyItem(price){
+//          if(this.userBalance >= price){
+//             this.userBalance = this.userBalance - price
+//             console.log(`Transaction Successfull Balance:${this.userBalance}`);
+//          }else{
+//             console.log(`You Dont have Money Please Reacharge Your Account`);
+//          }
+//     }
+// }
+// const user_1 = new Wallet(500)
+// user_1.buyItem(600)
+class StreamingAccount{
+    constructor(user,Package){
+        this.userName = user;
+        this.PackageType = Package;
+    }
+    playPremiumMovie(){
+        if(this.PackageType === "premium"){
+            console.log(`🍿 Movie chal rahi hai... Enjoy karein, ${this.userName}!`);
+
+        }else{
+            console.log(`❌ ${this.userName}, yeh movie sirf Premium users ke liye hai. Package upgrade`);
+        }
+    }
+    upgradePackage(){
+        this.PackageType = "premium"
+        console.log(`🎉 Mubarak ho ${this.userName}! Aapka account Premium par upgrade ho gay`);
+    }
+}
+const user_1 = new StreamingAccount("Mateen","Free")
+const user_2 = new StreamingAccount("Aneeq","premium")
+user_1.playPremiumMovie();
+user_1.upgradePackage();
+user_1.playPremiumMovie();
+user_2.upgradePackage();
+user_2.playPremiumMovie();

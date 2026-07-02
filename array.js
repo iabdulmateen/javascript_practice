@@ -27,3 +27,8 @@
 // var newFruits= fruits.slice(1,3);
 // document.write(fruits + "<br>");
 // document.write(newFruits);
+// const areas = ["Gulshan", "Johar", "Saddar", "Defence"];
+// const filteredAreas = areas.filter((area) =>{
+//   return area.endsWith("ar")
+// })
+// console.log(filteredAreas.join("/"))
