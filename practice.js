@@ -680,25 +680,294 @@
 // car_1.returnCar();
 // car_1.bookCar();
 // car_3.bookCar();
-class Person{
-    constructor(name,age){
-        this.userName =name;
-        this.userAge = age
-    }
-    introduce(){
-        console.log(`My Name is ${this.userName} And I,m ${this.userAge} Years Old.`);
-    }
-}
-class Student extends Person{
-    constructor(name,age,rollNo){
-    super(name,age);
-    this.rollNumber = rollNo;
-}
-showCompleteDetails(){
-    this.introduce();
-    console.log(`And My Roll Number Is ${this.rollNumber}`);
-}
+// class Person{
+//     constructor(name,age){
+//         this.userName =name;
+//         this.userAge = age
+//     }
+//     introduce(){
+//         console.log(`My Name is ${this.userName} And I,m ${this.userAge} Years Old.`);
+//     }
+// }
+// class Student extends Person{
+//     constructor(name,age,rollNo){
+//     super(name,age);
+//     this.rollNumber = rollNo;
+// }
+// showCompleteDetails(){
+//     this.introduce();
+//     console.log(`And My Roll Number Is ${this.rollNumber}`);
+// }
 
+// }
+// function prepareOrder(dishName, callback){
+//     console.log(`Order mil gaya! ${dishName} ban raha hai...`);
+    
+//     setTimeout(() => {
+        
+//         const orderStatus = {
+//             status: "Success",
+//             time: "18:45 PM",
+//             msg: "Garama garam Biryani ready hai!"
+//         };
+        
+        
+//         callback(orderStatus);
+//     }, 5000);
+// }
+
+
+// prepareOrder("Biryani", (report) => {
+//     console.log("Khana taiyar hai! Rider delivery ke liye nikal gaya hai. 🏍️");
+
+//     console.log(`Rider ke paas report: ${report.msg} (Time: ${report.time})`);
+// });
+// function downloadGame(gameName, callback){
+//     console.log(`Downloading ${gameName}... Please wait.`);
+//       setTimeout(() => {
+//         const downlaodStatus ={
+//             status: "Completed",
+//             fileSize: "2.4 GB"
+//         }
+//         callback(downlaodStatus);
+//       },4000)
+// }
+// downloadGame("GTA 6",(report)=>{
+//     console.log(`Game successfully downloaded! Size: ${report.fileSize}`);
+
+// })
+// function checkStock(itemName, callback){
+//     console.log(`${itemName} Mujood he ya nhi`);
+//     setTimeout(() => {
+//          const stockStatus={
+//             Available : true,
+//             price : 300000
+
+//            }
+//         callback(stockStatus)
+//     }, 2000);
+// }
+// function processPayment(amount, callback){
+//     console.log(`Processing payment of Rs. ${amount}`);
+//     setTimeout(()=>{
+//        const  payment ={
+//          transactionId: "TXN9988",
+//           status: "failed" 
+//        }
+//        callback(payment)
+//     },2000)
+// }
+// function generateReceipt(txnId, callback){
+//     console.log(`Generating receipt for Transaction: ${txnId}...`);
+//     setTimeout(() =>{
+//        callback("ORDER_SUCCESSFUL")
+//     },1000)
+// }
+// checkStock("Iphone 17 Pro Max" ,(stock)=>{
+//     if(stock.Available)
+//      {processPayment(stock.price, (payment)=>{
+//         if(payment.status === "paid"){
+//             generateReceipt(payment.transactionId,(receiptStatus)=>{
+//                 console.log(`Final Status: ${receiptStatus}`);
+//             })
+//         }else{
+//             console.log("payment Failed! Order Rejected");
+//         }
+    
+// })}else {
+//     console.log("Product out of stock hai!");
+// }
+// });
+// const enrollmentStatus = new Promise((Resolve,Reject)=>{
+//     let IsEnrolld = false;
+
+//     if(IsEnrolld){
+//         Resolve("Web Development course mein admission confirmed hai!")
+//     }else{
+//         Reject("Admission cancel ho gaya hai.")
+//     }
+
+// })
+// enrollmentStatus 
+// .then((Message)=>{
+//     console.log(Message);
+// })
+// .catch((Error)=>{
+//     console.log(Error);
+// })
+// class Car{
+//     constructor(brand,color){
+//         this.brand=brand;
+//         this.color=color;
+//     }
+//     drive(){
+//         console.log(`${this.brand} car chl rhi he`);
+//     }
+//     static aboutCar(){
+//         console.log("cars are used for transportation");
+//     }
+// }
+// const car_1 = new Car("Toyota","white");
+// const car_2 = new Car("Honda","Black");
+// car_1.drive()
+
+// Car.aboutCar()
+
+// console.log(car_1.brand);
+// class Account{
+//     constructor(){
+//      this._balance = 0;
+//     }
+//     get balance(){
+//       return  this._balance;
+//     }
+//     set balance (amount){
+//         if(amount > 0){
+//             this._balance = amount;
+//         }else{
+//             console.log("ERROR: Minus mein paise jama nahi ho sakte!");
+//         }
+//     }
+// }
+// const myacc = new Account();
+// myacc.balance=500;
+// myacc.balance=-100;
+// console.log(myacc.balance);
+// class Thermometer{
+//     constructor(){
+//        this._celsius = 25;
+//     }
+//     get temp(){
+//         return this._celsius;
+//     }
+//     set temp(newTemp){
+//         if(newTemp > -50 && newTemp < 100){
+//             this._celsius=newTemp;
+//         }else{
+//             console.log("ERROR: Invalid Temperature!");
+//         }
+
+//     }
+// }
+// const Room = new Thermometer();
+// Room._celsius = 30;
+// console.log(Room._celsius);
+// class Product{
+//     constructor(name){
+//         this.name=name;
+//         this._price= 0
+//     }
+//     get price(){
+//         return `RS :${this._price}`
+//     }
+//     set price(newPrice){
+//          if(newPrice >= 0){
+//             this._price=newPrice;
+//          }else{
+//             console.log("Error: Price cannot be negative!");
+//          }
+//     }
+// }
+// const p_1 =  new Product("Soap");
+// p_1.price = 200;
+// console.log(`ye ${p_1.name} ${p_1.price} ka he`);
+// class User {
+//     constructor(id) {
+//         this._id = id;
+//     }
+
+//     get id() { return this._id; }
+// }
+
+// const u = new User(101);
+// u.id = 555;
+// console.log(u.id); 
+
+//#Encapsulation
+// class Laptop{
+//      #password;
+//      constructor(){
+//         this.#password ="Mateen123";
+//      }
+//      get viewPassword(){
+//         return this.#password.substring(0,2) + "******";
+//      }
+//      chekPassword(inputPassword){
+//         if(inputPassword === this.#password){
+//             console.log("Access Granted: Laptop Unlocked");
+//         }else{
+//             console.log("Access Denied: Wrong Password! ❌");
+//         }
+//      }
+// }
+// const myLaptop =new Laptop();
+// myLaptop.chekPassword("wrondpas")
+// myLaptop.chekPassword("Mateen123")
+// console.log(myLaptop.viewPassword);
+// class SecureCard{
+//     #cardNumber;
+//     #Mpin;
+//     constructor(){
+//         this.#cardNumber = "8210172099609211";
+//         this.#Mpin = "2345";
+//     }
+//     get displayCard (){
+//         return this.#cardNumber.substring(0,4) + "XXXXXXXXXXXX"
+//     }
+//     chekPin(inputPin){
+//         if(inputPin === this.#Mpin){
+//             console.log("Account Unlocked");
+//         }else{
+//             console.log("Wrong Pin! Try Again");
+//         }
+
+//     }
+// }
+// const C_1 = new SecureCard();
+// C_1.chekPin(prompt("write Your pin!"));
+// console.log(C_1.displayCard);
+
+//#Abstraction
+// class ATM{
+//     #chekCard(){
+//         return "Card Cheking";
+
+//     }
+//     #chekBalance(){
+//        return "Cheking Balance";
+//     }
+//     #countCash(){
+//         return "Zerrrrrrrrrrrrrrrrr zerrrr"
+//     }
+//     withDraw(){
+//        console.log (this.#chekCard())
+//         console.log(this.#chekBalance()); 
+//         console.log(this.#countCash());
+//        console.log("Received Your Card!");
+//     }
+// }
+// const M_1 = new ATM();
+// M_1.withDraw();
+
+//Polymorphism
+class Payment{
+    process(amount){
+        console.log(`Processing general payment of Rs. ${amount}`);
+    }
 }
-const stu_1 = new Student("Mateen",20 , 777)
-stu_1.showCompleteDetails();
+class NayaPay extends Payment{
+    process(amount){
+        console.log(`NayaPay Wallet se Rs. ${amount } transfer ho gaye! `);
+    }
+}
+class Raast extends Payment{
+    process(amount){
+        console.log(`Raast Instant Banking se Rs. ${amount}  bhej diye gaye! `);
+    }
+}
+const p_1 = new Payment();
+const p_2 = new NayaPay();
+const p_3 = new Raast();
+p_1.process(500);
+p_2.process(500);
+p_3.process(500);
